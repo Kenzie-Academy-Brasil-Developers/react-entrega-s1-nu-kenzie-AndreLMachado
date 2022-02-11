@@ -1,0 +1,19 @@
+.somaValores {
+  width: 303px;
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #e9ecef;
+  margin-top: 16px;
+}
+
+.valor {
+  color: black;
+}
+
+.valorNum {
+  color: #fd377e;
+}

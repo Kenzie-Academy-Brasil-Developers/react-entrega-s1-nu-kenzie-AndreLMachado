@@ -1,0 +1,45 @@
+.Entrada {
+  border-left: 2px solid #03b898;
+}
+
+.valorEBotao {
+  display: flex;
+}
+
+.valorCard {
+  margin-top: 25px;
+}
+
+.excluir {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  margin-top: 18px;
+  margin-left: 70px;
+}
+
+.imgExcluir {
+  width: 15px;
+  height: 15px;
+}
+.Despesa {
+  border-left: 2px solid #e9ecef;
+}
+
+.Entrada,
+.Despesa {
+  display: flex;
+  justify-content: space-between;
+  height: 87px;
+  width: 540px;
+  margin-bottom: 32px;
+  background-color: #f8f9fa;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.tipo {
+  font-size: 12px;
+  color: #868e96;
+}

@@ -1,0 +1,54 @@
+p {
+  color: black;
+  font-size: 12px;
+}
+
+.valorForm {
+  display: flex;
+}
+
+.inputValor {
+  width: 125px;
+  height: 46px;
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 8px;
+  padding-left: 16px;
+}
+
+.descricao {
+  font-size: 16px;
+  font-weight: 400;
+  width: 296px;
+  height: 46px;
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  padding-left: 16px;
+}
+
+.tipoValor {
+  margin-left: 36px;
+}
+
+.select {
+  width: 150px;
+  height: 48px;
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 8px;
+  margin-left: 36px;
+  padding-left: 16px;
+}
+
+.insereValor {
+  width: 314px;
+  height: 48px;
+  background-color: #fd377e;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin-top: 19px;
+}

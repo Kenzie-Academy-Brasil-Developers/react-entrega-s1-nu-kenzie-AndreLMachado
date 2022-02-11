@@ -1,0 +1,136 @@
+.App-header {
+  width: 99vw;
+  height: 88px;
+  background: #f8f9fa;
+  box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+  margin-bottom: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.logo {
+  margin-top: 8px;
+  width: 122px;
+  height: 19px;
+}
+
+.inicio {
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e9ecef;
+  color: #868e96;
+}
+
+.orgHeader {
+  width: 980px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.filtros {
+  display: flex;
+  width: 560px;
+  justify-content: space-between;
+}
+
+.resumo {
+  color: black;
+  font-size: 16px;
+}
+
+.ladoB {
+  height: 600px;
+  max-width: 560px;
+}
+
+.formulario {
+  text-align: start;
+  display: flex;
+  background-color: #ffffff;
+  max-width: 314px;
+  height: 310px;
+  padding: 24.5px;
+  border: 1px solid #e9ecef;
+  margin-right: 59px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.Todos {
+  height: 40px;
+  background-color: #e9ecef;
+  color: #868e96;
+  border: none;
+  border-radius: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+}
+.Entradas {
+  height: 40px;
+  background-color: #e9ecef;
+  color: #868e96;
+  margin-left: 16px;
+  border: none;
+  border-radius: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+}
+.Despesas {
+  height: 40px;
+  background-color: #e9ecef;
+  color: #868e96;
+  margin-left: 16px;
+  border: none;
+  border-radius: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-div {
+  width: 980px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
