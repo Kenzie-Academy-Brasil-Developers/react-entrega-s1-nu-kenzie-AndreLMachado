@@ -1,3 +1,23 @@
 .listaTransacoes {
+  width: 560px;
   padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .listaTransacoes {
+    width: 100vw;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .listaTransacoes {
+    width: 40vw;
+  }
 }

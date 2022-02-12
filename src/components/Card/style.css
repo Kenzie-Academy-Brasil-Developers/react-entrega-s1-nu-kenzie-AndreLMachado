@@ -2,6 +2,11 @@
   border-left: 2px solid #03b898;
 }
 
+.desc {
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .valorEBotao {
   display: flex;
 }
@@ -42,4 +47,25 @@
 .tipo {
   font-size: 12px;
   color: #868e96;
+}
+
+@media (max-width: 768px) {
+  .Entrada,
+  .Despesa {
+    width: 90%;
+  }
+  .excluir {
+    margin-left: 30px;
+  }
+
+  .valorCard {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .Entrada,
+  .Despesa {
+    width: 100%;
+  }
 }

@@ -12,7 +12,7 @@ const Form = ({ listTransactions, setListTransactions }) => {
 
   return (
     <div className="form">
-      <p>Descrição</p>
+      <p className="pDescricao">Descrição</p>
       <input
         className="descricao"
         value={descricao}
@@ -21,8 +21,9 @@ const Form = ({ listTransactions, setListTransactions }) => {
       />
       <div className="valorForm">
         <div>
-          <p>Valor</p>
+          <p className="pValor">Valor</p>
           <input
+            type={"Number"}
             className="inputValor"
             value={valor}
             placeholder="Valor"

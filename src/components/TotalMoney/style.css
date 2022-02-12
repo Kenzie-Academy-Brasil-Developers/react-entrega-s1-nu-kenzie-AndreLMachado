@@ -10,10 +10,22 @@
   margin-top: 16px;
 }
 
-.valor {
+.valorTotal {
   color: black;
 }
 
 .valorNum {
   color: #fd377e;
+}
+
+@media (max-width: 767px) {
+  .somaValores {
+    margin-top: 90px;
+    width: 100%;
+    padding: 0px;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 }

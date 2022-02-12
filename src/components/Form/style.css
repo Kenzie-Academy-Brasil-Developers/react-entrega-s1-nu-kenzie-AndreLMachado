@@ -52,3 +52,31 @@ p {
   border-radius: 8px;
   margin-top: 19px;
 }
+
+@media (max-width: 767px) {
+  .valorForm {
+    flex-direction: column;
+  }
+
+  .descricao,
+  .inputValor,
+  .select {
+    width: 80%;
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+  .pValor,
+  .pDescricao,
+  .tipoValor {
+    font-size: 16px;
+  }
+
+  .form {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}

@@ -2,7 +2,7 @@ import "./style.css";
 const TotalMoney = ({ listTransactions }) => {
   return (
     <div className="somaValores">
-      <h3 className="valor">Valor</h3>
+      <h3 className="valorTotal">Valor total</h3>
       <p className="valorNum">
         {`$ `}
         {listTransactions
