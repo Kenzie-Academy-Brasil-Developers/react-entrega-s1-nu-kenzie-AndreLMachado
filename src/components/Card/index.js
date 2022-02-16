@@ -8,10 +8,11 @@ const Card = ({
   setListTransactionsFilters,
 }) => {
   const removeTransation = () => {
-    setListTransactions(
-      listTransactions.filter((item) => item.indice !== transaction.indice)
+    const removidos = listTransactions.filter(
+      (item) => item.indice !== transaction.indice
     );
-    setListTransactionsFilters(listTransactions);
+    setListTransactions(removidos);
+    setListTransactionsFilters(removidos);
   };
 
   console.log(transaction);

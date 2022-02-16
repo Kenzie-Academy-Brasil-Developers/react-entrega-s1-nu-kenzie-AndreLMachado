@@ -13,7 +13,6 @@ const Form = ({
   console.log(indice);
 
   const setNewTransation = () => {
-    setIndice(listTransactions.length + 1);
     setListTransactions([
       ...listTransactions,
       { valor, descricao, tipo, indice },
@@ -22,6 +21,8 @@ const Form = ({
       ...listTransactions,
       { valor, descricao, tipo, indice },
     ]);
+
+    setIndice(listTransactions.length + 1);
   };
 
   return (

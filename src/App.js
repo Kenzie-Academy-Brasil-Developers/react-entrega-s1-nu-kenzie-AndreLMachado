@@ -69,7 +69,7 @@ function App() {
             </div>
           </div>
           <List
-            listTransactions={listTransactions}
+            listTransactions={listTransactionsFilters}
             setListTransactions={setListTransactions}
             setListTransactionsFilters={setListTransactionsFilters}
           />
