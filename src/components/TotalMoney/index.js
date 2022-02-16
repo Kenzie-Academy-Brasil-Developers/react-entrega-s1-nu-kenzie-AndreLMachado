@@ -6,7 +6,13 @@ const TotalMoney = ({ listTransactions }) => {
       <p className="valorNum">
         {`$ `}
         {listTransactions
-          .reduce((acc, transaction) => acc + Number(transaction.valor), 0)
+          .reduce(
+            (acc, transaction) =>
+              transaction.tipo === "Despesa"
+                ? acc - Number(transaction.valor)
+                : acc + Number(transaction.valor),
+            0
+          )
           .toFixed(2)}
       </p>
     </div>

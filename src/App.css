@@ -74,6 +74,12 @@ button:hover {
   pointer-events: none;
 }
 
+.Todos:active,
+.Entradas:active,
+.Despesas:active {
+  background-color: #fd377e;
+}
+
 .Todos {
   height: 40px;
   background-color: #e9ecef;

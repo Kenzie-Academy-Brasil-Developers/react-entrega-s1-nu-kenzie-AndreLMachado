@@ -1,9 +1,10 @@
-import List from "../List";
-const filterEntrada = (listTransactions) => {
-  console.log(listTransactions);
-  return listTransactions.filter(
-    (transaction) => transaction.tipo == "entrada"
+import { List } from "../List";
+
+const filterTipo = (listTransactions, tipo, setListTransactionsFilters) => {
+  setListTransactionsFilters([...listTransactions]);
+  const filtrados = listTransactions.filter(
+    (transaction) => transaction.tipo === tipo
   );
-  console.log(listTransactions);
+  setListTransactionsFilters(filtrados);
 };
-export default filterEntrada;
+export default filterTipo;

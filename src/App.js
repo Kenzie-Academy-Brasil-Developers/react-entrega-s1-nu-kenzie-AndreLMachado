@@ -4,10 +4,13 @@ import { Form } from "./components/Form";
 import { List } from "./components/List";
 import { TotalMoney } from "./components/TotalMoney";
 import logo from "../src/components/assets/img/logo.png";
-import filterEntrada from "./components/filters";
+import filterTipo from "./components/filters";
 
 function App() {
   const [listTransactions, setListTransactions] = useState([]);
+  const [listTransactionsFilters, setListTransactionsFilters] = useState([
+    ...listTransactions,
+  ]);
   return (
     <div className="App">
       <header className="App-header">
@@ -22,6 +25,7 @@ function App() {
             <Form
               listTransactions={listTransactions}
               setListTransactions={setListTransactions}
+              setListTransactionsFilters={setListTransactionsFilters}
             />
           </div>
           <div>
@@ -32,14 +36,43 @@ function App() {
           <div className="filtros">
             <h3 className="resumo">Resumo Financeiro</h3>
             <div>
-              <button className="Todos">Todos</button>
-              <button className="Entradas" onClick={filterEntrada}>
+              <button
+                className="Todos"
+                onClick={() => setListTransactionsFilters(listTransactions)}
+              >
+                Todos
+              </button>
+              <button
+                className="Entradas"
+                onClick={() =>
+                  filterTipo(
+                    listTransactions,
+                    "Entrada",
+                    setListTransactionsFilters
+                  )
+                }
+              >
                 Entradas
               </button>
-              <button className="Despesas">Despesas</button>
+              <button
+                className="Despesas"
+                onClick={() =>
+                  filterTipo(
+                    listTransactions,
+                    "Despesa",
+                    setListTransactionsFilters
+                  )
+                }
+              >
+                Despesas
+              </button>
             </div>
           </div>
-          <List listTransactions={listTransactions} />
+          <List
+            listTransactions={listTransactions}
+            setListTransactions={setListTransactions}
+            setListTransactionsFilters={setListTransactionsFilters}
+          />
         </div>
       </div>
     </div>

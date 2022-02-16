@@ -1,13 +1,27 @@
 import "./style.css";
 import { useState } from "react";
 
-const Form = ({ listTransactions, setListTransactions }) => {
+const Form = ({
+  listTransactions,
+  setListTransactions,
+  setListTransactionsFilters,
+}) => {
   const [valor, setValor] = useState("");
   const [descricao, setDescricao] = useState("");
   const [tipo, setTipo] = useState("Entrada");
+  const [indice, setIndice] = useState(0);
+  console.log(indice);
 
   const setNewTransation = () => {
-    setListTransactions([...listTransactions, { valor, descricao, tipo }]);
+    setIndice(listTransactions.length + 1);
+    setListTransactions([
+      ...listTransactions,
+      { valor, descricao, tipo, indice },
+    ]);
+    setListTransactionsFilters([
+      ...listTransactions,
+      { valor, descricao, tipo, indice },
+    ]);
   };
 
   return (
